@@ -3,12 +3,12 @@ public class Employee {
     private String firstname;
     private String surname;
     private String sex;
-    private int Dob;
-    private int PhoneNo;
     private String Email;
-     private String Address;
-     private String Employlevel;
-      private int Payment;
+    private String Address;
+    private String Employeelevel;
+    private String Dob;
+    private int PhoneNo;
+    private int Payment;
 
     //set methods
     public void setFirstname(String firstname){
@@ -41,23 +41,15 @@ public class Employee {
 
     
 
-    public void setDob(int Dob) {
+    public void setDob(String Dob) {
         this.Dob = Dob;
 }
-    public void setPhoneNo(int PhoneNo){
-        this.PhoneNo = PhoneNo;
-    }
+    
    
-    public Integer getPhoneNo(){
-        return this.PhoneNo;
-    }
-   
-    public Integer getDob() {
+    public String getDob() {
         return this.Dob;
     }
      
-     
-
      public void setEmail(String Email) {
          this.Email = Email;
 
@@ -66,8 +58,8 @@ public class Employee {
         this.Address = Address;
      }
       
-      public void setEmploylevel(String Employlevel) {
-          this.Employlevel = Employlevel;
+      public void setEmployeelevel(String Employlevel) {
+          this.Employeelevel = Employeelevel;
       }
 
       public String getEmail() {
@@ -78,9 +70,16 @@ public class Employee {
           return this.Address;
       }
 
-      public String getEmploylevel(){
-          return this.Employlevel;
+      public String getEmployeelevel(){
+          return this.Employeelevel;
       }
+      public void setPhoneNo(int PhoneNo){
+        this.PhoneNo = PhoneNo;
+    }
+   
+    public Integer getPhoneNo(){
+        return this.PhoneNo;
+    }
     
     
 
@@ -91,8 +90,4 @@ public class Employee {
      public Integer getPayment(){
          return this.Payment;
      }
-
-        
-
-
-    }
+ }
