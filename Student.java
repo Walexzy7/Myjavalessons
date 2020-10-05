@@ -1,22 +1,40 @@
- public class Student {
+/**
+ * A new student class
+ * Author: Wale
+ * Date: 25th September 2020
+ */
+
+public class Student {
+
+    //class properties
      private String nameOfSchool;
-     private String name;
+     private String firstname;
      private String surname;
      private String department;
      private int level;
      private String sex;
-     private int year;
-     private String maidenName;
+     private int year;     
      private int age;
-     private int identityNo;
+     private String matricNo;
      private String address;
      private String faculty;
 
+     public Student(){
+
+     }
+     
+     public Student(String firstname, String surname){
+         this.firstname = firstname;
+         this.surname = surname;
+
+     }
+
+     //set methods
      public void setNameOfSchool(String nameOfSchool){
          this.nameOfSchool = nameOfSchool;
      }
-     public void setName(String name) {
-         this.name = name;
+     public void setFirstname(String firstname) {
+         this.firstname = firstname;
      }
 
      public void setSurname(String surname) {
@@ -34,14 +52,12 @@
      public void setYear(int year) {
          this.year = year;
      }
-     public void setMaidenName(String maidenName) {
-         this.maidenName = maidenName;
-     }
+    
      public void setAge(int age) {
          this.age = age;
      }
-     public void setIdentityNo(int identityNo) {
-         this.identityNo = identityNo;
+     public void setMatricNo(String matricNo) {
+         this.matricNo = matricNo;
      }
      public void setAddress(String address) {
          this.address = address;
@@ -50,11 +66,13 @@
          this.faculty = faculty;
      }
 
+
+    //get methods
     public String getNameOfSchool(){
-        return this.nameOfSchool;
+        return this.nameOfSchool;                
      }
-     public String getName() {
-         return this.name;
+     public String getFirstname() {
+         return this.firstname;
      }
      public String getSurname() {
          return this.surname;
@@ -71,14 +89,12 @@
      public int getYear() {
          return this.year;
      }
-     public String getMaidenName(){
-         return this.maidenName;
-     }
+     
      public int getAge(){
          return this.age;
      }
-     public int getIdentityNo() {
-         return this.identityNo;
+     public String getMatricNo() {
+         return this.matricNo;
      }
      public String getAddress(){
          return this.address;
