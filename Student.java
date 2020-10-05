@@ -1,4 +1,12 @@
- public class Student {
+/**
+ * A new student class
+ * Author: Wale
+ * Date: 25th September 2020
+ */
+
+public class Student {
+
+    //class properties
      private String nameOfSchool;
      private String firstname;
      private String surname;
@@ -137,8 +145,10 @@
          this.faculty = faculty;
      }
 
+
+    //get methods
     public String getNameOfSchool(){
-        return this.nameOfSchool;
+        return this.nameOfSchool;                
      }
      public String getFirstname() {
          return this.firstname;
